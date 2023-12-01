@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Roboto";
+    background-color: #f2f2f7;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.weather-app {
+    max-width: 600px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.dark-theme {
+    background-color: #212121;
+    color: #fff;
+}
+
+.button-theme {
+    background-color: #ffff00;
+    color: #212121;
+}
+
+.dark-theme #location {
+    background-color: #212121;
+    color: #fff;
+}
+
+body.dark {
+    background-color: #212121;
+}
+
+.checkbox {
+    margin-top: 20px;
+}
+
+.switch {
+    position: relative;
+    height: 1.5rem;
+    width: 3rem;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 9999px;
+    background-color: rgba(100, 116, 139, 0.377);
+    transition: all 0.3s ease;
+}
+
+.switch:checked {
+    background-color: rgba(32, 151, 243, 1);
+}
+  
+.switch::before {
+    position: absolute;
+    content: "";
+    left: calc(1.5rem - 1.6rem);
+    top: calc(1.5rem - 1.6rem);
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+    cursor: pointer;
+    border: 1px solid rgba(100, 116, 139, 0.527);
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0px 10px rgba(100, 116, 139, 0.327);
+    transition: all 0.3s ease;
+}
+
+.switch:hover::before {
+    box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.15);
+}
+
+.switch:checked:hover::before {
+    box-shadow: 0 0 0px 8px rgba(32, 151, 243, 0.15);
+}
+
+.switch:checked:before {
+    transform: translateX(100%);
+    border-color: rgba(32, 151, 243, 1);
+}
