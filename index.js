@@ -1,7 +1,8 @@
 const input = document.querySelector("input");
-//  const body = document.querySelector("body");
+const body = document.querySelector("body");
 var weatherApp = document.getElementById('weatherApp');
 var buttonPrevision = document.getElementById('buttonPrevision');
+var buttonAlerts = document.getElementById('buttonAlerts');
 
 // Função para ajustar dinamicamente o tamanho do campo de seleção
 function ajustarTamanhoCampoSelecao() {
@@ -13,9 +14,11 @@ function ajustarTamanhoCampoSelecao() {
 }
 
 const toggleThemeMode = () => {
-  // body.classList.toggle("dark"); // Ativar o dark mode em todo o body
+  body.classList.toggle("dark"); // Ativar o dark mode em todo o body
   weatherApp.classList.toggle("dark-theme"); // Ativar o dark mode dentro do carde
   buttonPrevision.classList.toggle("button-theme"); // Ativa o dark mode apenas no button
+  buttonAlerts.classList.toggle("button-theme"); // Ativa o dark mode apenas no button
+
 };
 
 input.onchange = toggleThemeMode;

@@ -2,7 +2,7 @@ function getWeather() {
     let location = document.getElementById('location').value;
     console.log('Location:', location);
     let apiKey = '014b6a2e55ce3ae4206ff2808d1f9c80';
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&lang=pt`;
 
     // Faz uma solicitação GET à API usando fetch
     fetch(apiUrl)
